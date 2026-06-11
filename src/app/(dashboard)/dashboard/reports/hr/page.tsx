@@ -88,7 +88,7 @@ export default function HRReportsPage() {
             <div className="h-[300px]">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
-                  <Pie data={salaryDistribution} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={95} innerRadius={55} paddingAngle={3} label={({ name, value }: { name: string; value: number }) => `${name}: ${value}`}>
+                  <Pie data={salaryDistribution} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={95} innerRadius={55} paddingAngle={3} label={({ name, value }: any) => `${name}: ${value}`}>
                     {salaryDistribution.map((e, i) => <Cell key={i} fill={e.color} />)}
                   </Pie>
                   <Tooltip contentStyle={tt} />

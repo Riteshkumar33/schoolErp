@@ -99,7 +99,7 @@ export default function FinanceReportsPage() {
             <div className="h-[300px]">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
-                  <Pie data={feeBreakdown} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={95} innerRadius={55} paddingAngle={3} label={({ name, value }: { name: string; value: number }) => `${name}: ${fmt(value)}`}>
+                  <Pie data={feeBreakdown} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={95} innerRadius={55} paddingAngle={3} label={({ name, value }: any) => `${name}: ${fmt(value)}`}>
                     {feeBreakdown.map((e, i) => <Cell key={i} fill={e.color} />)}
                   </Pie>
                   <Tooltip contentStyle={tt} formatter={(v: number) => [fmt(v), ""]} />

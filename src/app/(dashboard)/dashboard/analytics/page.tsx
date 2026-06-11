@@ -140,7 +140,7 @@ export default function AnalyticsPage() {
                     outerRadius={100}
                     innerRadius={60}
                     paddingAngle={4}
-                    label={({ name, value }: { name: string; value: number }) => `${name}: ${value}`}
+                    label={({ name, value }: any) => `${name}: ${value}`}
                   >
                     {genderDistribution.map((_, i) => (
                       <Cell key={i} fill={COLORS[i]} />

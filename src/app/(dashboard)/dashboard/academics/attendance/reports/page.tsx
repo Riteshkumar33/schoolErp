@@ -239,7 +239,7 @@ export default function AttendanceReportsPage() {
                     outerRadius={100}
                     innerRadius={55}
                     paddingAngle={4}
-                    label={({ name, value }: { name: string; value: number }) => `${name}: ${value}`}
+                    label={({ name, value }: any) => `${name}: ${value}`}
                   >
                     {statusBreakdown.map((entry, i) => (
                       <Cell key={i} fill={entry.color} />
