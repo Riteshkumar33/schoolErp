@@ -224,7 +224,7 @@ export default function DashboardPage() {
                       borderRadius: '8px',
                       fontSize: '12px',
                     }}
-                    formatter={(value: number) => [`₹${value.toLocaleString()}`, '']}
+                    formatter={(value: any) => [`₹${value?.toLocaleString()}`, '']}
                   />
                   <Bar dataKey="collected" name="Collected" fill="hsl(170, 55%, 45%)" radius={[4, 4, 0, 0]} />
                   <Bar dataKey="pending" name="Pending" fill="hsl(35, 90%, 55%)" radius={[4, 4, 0, 0]} />

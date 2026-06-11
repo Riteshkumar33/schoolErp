@@ -87,7 +87,7 @@ export default function TransportReportsPage() {
                   <CartesianGrid strokeDasharray="3 3" className="stroke-muted" vertical={false} />
                   <XAxis dataKey="month" tick={{ fill: "hsl(var(--muted-foreground))" }} className="text-xs" />
                   <YAxis tick={{ fill: "hsl(var(--muted-foreground))" }} className="text-xs" tickFormatter={(v) => `₹${v / 1000}K`} />
-                  <Tooltip contentStyle={tt} formatter={(v: number) => [`₹${v.toLocaleString("en-IN")}`, ""]} />
+                  <Tooltip contentStyle={tt} formatter={(v: any) => [`₹${v?.toLocaleString("en-IN")}`, ""]} />
                   <Bar dataKey="cost" name="Fuel Cost" fill="hsl(250, 65%, 60%)" radius={[6, 6, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>

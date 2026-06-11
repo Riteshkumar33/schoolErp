@@ -176,7 +176,7 @@ export default function AnalyticsPage() {
                   <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
                   <XAxis dataKey="month" className="text-xs" tick={{ fill: 'hsl(var(--muted-foreground))' }} />
                   <YAxis className="text-xs" tick={{ fill: 'hsl(var(--muted-foreground))' }} tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} />
-                  <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', border: '1px solid hsl(var(--border))', borderRadius: '8px', fontSize: '12px' }} formatter={(value: number) => [`₹${value.toLocaleString()}`, '']} />
+                  <Tooltip contentStyle={{ backgroundColor: 'hsl(var(--card))', border: '1px solid hsl(var(--border))', borderRadius: '8px', fontSize: '12px' }} formatter={(value: any) => [`₹${value?.toLocaleString()}`, '']} />
                   <Legend />
                   <Area type="monotone" dataKey="collected" stroke="hsl(170, 55%, 45%)" fillOpacity={1} fill="url(#colorCollected)" strokeWidth={2} />
                   <Area type="monotone" dataKey="pending" stroke="hsl(35, 90%, 55%)" fillOpacity={1} fill="url(#colorPending)" strokeWidth={2} />

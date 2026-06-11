@@ -80,7 +80,7 @@ export default function FinanceReportsPage() {
                   <CartesianGrid strokeDasharray="3 3" className="stroke-muted" vertical={false} />
                   <XAxis dataKey="month" tick={{ fill: "hsl(var(--muted-foreground))" }} className="text-xs" />
                   <YAxis tick={{ fill: "hsl(var(--muted-foreground))" }} className="text-xs" tickFormatter={(v) => `${(v / 100000).toFixed(0)}L`} />
-                  <Tooltip contentStyle={tt} formatter={(v: number) => [fmt(v), ""]} />
+                  <Tooltip contentStyle={tt} formatter={(v: any) => [fmt(v), ""]} />
                   <Legend />
                   <Bar dataKey="collected" name="Collected" fill="hsl(170, 55%, 45%)" radius={[4, 4, 0, 0]} />
                   <Bar dataKey="pending" name="Pending" fill="hsl(35, 90%, 55%)" radius={[4, 4, 0, 0]} />
@@ -102,7 +102,7 @@ export default function FinanceReportsPage() {
                   <Pie data={feeBreakdown} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={95} innerRadius={55} paddingAngle={3} label={({ name, value }: any) => `${name}: ${fmt(value)}`}>
                     {feeBreakdown.map((e, i) => <Cell key={i} fill={e.color} />)}
                   </Pie>
-                  <Tooltip contentStyle={tt} formatter={(v: number) => [fmt(v), ""]} />
+                  <Tooltip contentStyle={tt} formatter={(v: any) => [fmt(v), ""]} />
                 </PieChart>
               </ResponsiveContainer>
             </div>
