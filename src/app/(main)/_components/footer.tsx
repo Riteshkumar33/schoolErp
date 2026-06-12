@@ -16,7 +16,7 @@ export function Footer() {
                 <GraduationCap className="size-5 text-primary-foreground" />
               </div>
               <span className="text-lg font-bold tracking-tight leading-tight">
-                ABC <span className="text-primary">School</span>
+                Baby Martin <span className="text-primary">International</span>
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
@@ -54,7 +54,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 sm:flex-row">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} ABC School. All rights reserved.
+            © {new Date().getFullYear()} Baby Martin International School. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
             Powered by <span className="font-medium text-foreground">SchoolERP</span>

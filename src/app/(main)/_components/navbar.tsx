@@ -39,7 +39,7 @@ export function Navbar() {
               <GraduationCap className="size-5 text-primary-foreground" />
             </div>
             <span className="text-lg font-bold tracking-tight leading-tight">
-              ABC <span className="text-primary">School</span>
+              Baby Martin <span className="text-primary">International</span>
             </span>
           </Link>
 

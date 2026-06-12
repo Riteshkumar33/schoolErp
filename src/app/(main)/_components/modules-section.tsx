@@ -8,13 +8,13 @@ import {
 
 const modules = [
   { icon: BookOpen, name: "Academics", desc: "Curriculum, timetables, exams, and results", color: "from-blue-500 to-blue-600" },
-  { icon: ClipboardList, name: "Attendance", desc: "Biometric & manual attendance tracking", color: "from-emerald-500 to-emerald-600" },
-  { icon: IndianRupee, name: "Finance", desc: "Fees, payroll, ledger, and receipts", color: "from-amber-500 to-amber-600" },
-  { icon: Users, name: "HR & Payroll", desc: "Staff management and salary processing", color: "from-violet-500 to-violet-600" },
+  { icon: ClipboardList, name: "Attendance", desc: "Biometric & manual attendance tracking", color: "from-indigo-500 to-indigo-600" },
+  { icon: IndianRupee, name: "Finance", desc: "Fees, payroll, ledger, and receipts", color: "from-violet-500 to-violet-600" },
+  { icon: Users, name: "HR & Payroll", desc: "Staff management and salary processing", color: "from-purple-500 to-purple-600" },
   { icon: MessageSquare, name: "Communication", desc: "Parent portal, notice board, and messaging", color: "from-pink-500 to-pink-600" },
-  { icon: Building2, name: "Hostel", desc: "Room allocation, warden management", color: "from-cyan-500 to-cyan-600" },
-  { icon: Layers, name: "Library", desc: "Book catalogue, issue/return tracking", color: "from-orange-500 to-orange-600" },
-  { icon: Calendar, name: "Events", desc: "School events, holidays, and scheduling", color: "from-indigo-500 to-indigo-600" },
+  { icon: Building2, name: "Hostel", desc: "Room allocation, warden management", color: "from-fuchsia-500 to-fuchsia-600" },
+  { icon: Layers, name: "Library", desc: "Book catalogue, issue/return tracking", color: "from-sky-500 to-sky-600" },
+  { icon: Calendar, name: "Events", desc: "School events, holidays, and scheduling", color: "from-slate-500 to-slate-600" },
 ]
 
 export function ModulesSection() {

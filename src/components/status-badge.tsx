@@ -10,54 +10,54 @@ interface StatusBadgeProps {
 
 const statusStyles: Record<string, string> = {
   // Common
-  active: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
+  active: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400",
   inactive: "bg-zinc-500/10 text-zinc-600 dark:text-zinc-400",
-  pending: "bg-amber-500/10 text-amber-600 dark:text-amber-400",
+  pending: "bg-violet-500/10 text-violet-600 dark:text-violet-400",
 
   // People
   graduated: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
-  "on leave": "bg-orange-500/10 text-orange-600 dark:text-orange-400",
+  "on leave": "bg-fuchsia-500/10 text-fuchsia-600 dark:text-fuchsia-400",
   resigned: "bg-red-500/10 text-red-600 dark:text-red-400",
   suspended: "bg-red-500/10 text-red-600 dark:text-red-400",
 
   // Finance
-  paid: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
+  paid: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400",
   overdue: "bg-red-500/10 text-red-600 dark:text-red-400",
-  partial: "bg-amber-500/10 text-amber-600 dark:text-amber-400",
+  partial: "bg-violet-500/10 text-violet-600 dark:text-violet-400",
 
   // Inquiry
   new: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
   contacted: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400",
   scheduled: "bg-violet-500/10 text-violet-600 dark:text-violet-400",
-  converted: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
+  converted: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400",
   closed: "bg-zinc-500/10 text-zinc-600 dark:text-zinc-400",
 
   // Library
-  available: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
-  "low stock": "bg-amber-500/10 text-amber-600 dark:text-amber-400",
+  available: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400",
+  "low stock": "bg-violet-500/10 text-violet-600 dark:text-violet-400",
   "out of stock": "bg-red-500/10 text-red-600 dark:text-red-400",
 
   // Vehicle
-  maintenance: "bg-amber-500/10 text-amber-600 dark:text-amber-400",
+  maintenance: "bg-violet-500/10 text-violet-600 dark:text-violet-400",
 
   // Announcement
-  published: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
+  published: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400",
   draft: "bg-zinc-500/10 text-zinc-600 dark:text-zinc-400",
 
   // Tickets
   open: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
-  "in progress": "bg-amber-500/10 text-amber-600 dark:text-amber-400",
-  resolved: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
+  "in progress": "bg-violet-500/10 text-violet-600 dark:text-violet-400",
+  resolved: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400",
 
   // Priority
   high: "bg-red-500/10 text-red-600 dark:text-red-400",
-  medium: "bg-amber-500/10 text-amber-600 dark:text-amber-400",
+  medium: "bg-violet-500/10 text-violet-600 dark:text-violet-400",
   low: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
 
   // Subject types
   core: "bg-violet-500/10 text-violet-600 dark:text-violet-400",
   elective: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400",
-  lab: "bg-orange-500/10 text-orange-600 dark:text-orange-400",
+  lab: "bg-fuchsia-500/10 text-fuchsia-600 dark:text-fuchsia-400",
 }
 
 export function StatusBadge({ status, className }: StatusBadgeProps) {

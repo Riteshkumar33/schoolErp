@@ -35,7 +35,7 @@ export function HeroSection() {
             <br className="hidden sm:block" />
             <span className="relative">
               <span className="bg-gradient-to-r from-primary via-chart-2 to-chart-1 bg-clip-text text-transparent">
-                ABC School
+                Baby Martin International School
               </span>
               <svg
                 className="absolute -bottom-2 left-0 w-full"
@@ -88,9 +88,9 @@ export function HeroSection() {
           <div className="relative rounded-2xl border border-border/60 bg-card/50 p-2 shadow-2xl shadow-primary/5 backdrop-blur-sm">
             {/* Window chrome */}
             <div className="flex items-center gap-1.5 px-3 py-2.5 border-b border-border/40">
-              <div className="size-2.5 rounded-full bg-red-400" />
-              <div className="size-2.5 rounded-full bg-amber-400" />
-              <div className="size-2.5 rounded-full bg-emerald-400" />
+              <div className="size-2.5 rounded-full bg-slate-300/80 dark:bg-slate-700" />
+              <div className="size-2.5 rounded-full bg-slate-300/80 dark:bg-slate-700" />
+              <div className="size-2.5 rounded-full bg-slate-300/80 dark:bg-slate-700" />
               <div className="ml-3 h-5 flex-1 max-w-xs rounded bg-muted/50" />
             </div>
             {/* Dashboard skeleton */}
@@ -99,8 +99,8 @@ export function HeroSection() {
                 {[
                   { label: "Students", value: "1,250", color: "from-blue-500/20 to-blue-500/5" },
                   { label: "Staff", value: "92", color: "from-violet-500/20 to-violet-500/5" },
-                  { label: "Revenue", value: "₹12.4L", color: "from-emerald-500/20 to-emerald-500/5" },
-                  { label: "Attendance", value: "94.2%", color: "from-amber-500/20 to-amber-500/5" },
+                  { label: "Fees Collected", value: "₹12.4L", color: "from-fuchsia-500/20 to-fuchsia-500/5" },
+                  { label: "Attendance", value: "94.2%", color: "from-sky-500/20 to-sky-500/5" },
                 ].map((card) => (
                   <div key={card.label} className={`rounded-xl bg-gradient-to-b ${card.color} border border-border/30 p-3 sm:p-4`}>
                     <p className="text-[10px] sm:text-xs text-muted-foreground">{card.label}</p>

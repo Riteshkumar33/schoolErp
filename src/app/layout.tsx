@@ -33,7 +33,7 @@ const fontMono = JetBrains_Mono({
 
 
 export const metadata: Metadata = {
-  title: "ABC School — School Management Portal",
+  title: "Baby Martin International School — School Management Portal",
   description:
     "Access your school portal — attendance, fees, exams, timetables, and more. For students, parents, teachers, and administrators.",
 };

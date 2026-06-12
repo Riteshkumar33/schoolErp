@@ -23,7 +23,7 @@ const steps = [
     icon: Rocket,
     title: "Stay Connected",
     desc: "Get real-time notifications about school events, fee reminders, and your child's progress.",
-    color: "from-emerald-500 to-emerald-600",
+    color: "from-fuchsia-500 to-fuchsia-600",
   },
 ]
 

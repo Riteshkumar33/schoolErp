@@ -22,15 +22,15 @@ const features = [
     icon: IndianRupee,
     title: "Fee Collection & Tracking",
     description: "Online payments, instant receipts, automated reminders, and a clear view of fee status at any time.",
-    gradient: "from-emerald-500/20 to-emerald-600/5",
-    iconBg: "bg-emerald-500/10 text-emerald-500",
+    gradient: "from-indigo-500/20 to-indigo-600/5",
+    iconBg: "bg-indigo-500/10 text-indigo-500",
   },
   {
     icon: BarChart3,
     title: "Reports & Insights",
     description: "Attendance trends, exam analytics, fee collection rates — everything visible on your dashboard.",
-    gradient: "from-amber-500/20 to-amber-600/5",
-    iconBg: "bg-amber-500/10 text-amber-500",
+    gradient: "from-sky-500/20 to-sky-600/5",
+    iconBg: "bg-sky-500/10 text-sky-500",
   },
   {
     icon: Bell,
@@ -43,8 +43,8 @@ const features = [
     icon: Shield,
     title: "Secure & Role-Based",
     description: "Teachers see only what they need. Parents access only their child's data. Your data stays safe and private.",
-    gradient: "from-cyan-500/20 to-cyan-600/5",
-    iconBg: "bg-cyan-500/10 text-cyan-500",
+    gradient: "from-purple-500/20 to-purple-600/5",
+    iconBg: "bg-purple-500/10 text-purple-500",
   },
 ]
 

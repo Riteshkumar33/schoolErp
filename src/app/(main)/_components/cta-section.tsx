@@ -6,8 +6,8 @@ import { LogIn, Phone, Mail, MapPin } from "lucide-react"
 
 const contactInfo = [
   { icon: Phone, label: "+91 98765 43210" },
-  { icon: Mail, label: "info@abcschool.edu.in" },
-  { icon: MapPin, label: "123, Main Road, City" },
+  { icon: Mail, label: "info@babymartin.edu.in" },
+  { icon: MapPin, label: "Lucknow, Uttar Pradesh" },
 ]
 
 export function CtaSection() {
