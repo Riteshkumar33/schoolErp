@@ -7,42 +7,42 @@ const features = [
   {
     icon: GraduationCap,
     title: "Academic Management",
-    description: "Manage curricula, timetables, classes, and academic calendars with ease.",
+    description: "Classes, exams, results, and timetables — organized automatically for every section and subject.",
     gradient: "from-blue-500/20 to-blue-600/5",
     iconBg: "bg-blue-500/10 text-blue-500",
   },
   {
     icon: Users,
     title: "Student & Staff Records",
-    description: "Centralised profiles for every student, teacher, and staff member.",
+    description: "Complete profiles for every student, teacher, and staff member — searchable and always up to date.",
     gradient: "from-violet-500/20 to-violet-600/5",
     iconBg: "bg-violet-500/10 text-violet-500",
   },
   {
     icon: IndianRupee,
-    title: "Fee & Finance",
-    description: "Automate fee collection, generate invoices, and track payments in real time.",
+    title: "Fee Collection & Tracking",
+    description: "Online payments, instant receipts, automated reminders, and a clear view of fee status at any time.",
     gradient: "from-emerald-500/20 to-emerald-600/5",
     iconBg: "bg-emerald-500/10 text-emerald-500",
   },
   {
     icon: BarChart3,
-    title: "Reports & Analytics",
-    description: "Gain instant insights with customisable dashboards and exportable reports.",
+    title: "Reports & Insights",
+    description: "Attendance trends, exam analytics, fee collection rates — everything visible on your dashboard.",
     gradient: "from-amber-500/20 to-amber-600/5",
     iconBg: "bg-amber-500/10 text-amber-500",
   },
   {
     icon: Bell,
     title: "Smart Notifications",
-    description: "Send SMS, email, and in-app alerts to parents, students, and staff.",
+    description: "Parents and staff get automatic alerts about fees, absences, events, and announcements.",
     gradient: "from-pink-500/20 to-pink-600/5",
     iconBg: "bg-pink-500/10 text-pink-500",
   },
   {
     icon: Shield,
-    title: "Role-Based Access",
-    description: "Granular permissions ensure every user only sees what they need.",
+    title: "Secure & Role-Based",
+    description: "Teachers see only what they need. Parents access only their child's data. Your data stays safe and private.",
     gradient: "from-cyan-500/20 to-cyan-600/5",
     iconBg: "bg-cyan-500/10 text-cyan-500",
   },
@@ -57,17 +57,17 @@ export function FeaturesSection() {
             variant="secondary"
             className="mb-5 bg-primary/10 text-primary border-primary/20"
           >
-            Features
+            What&apos;s Inside
           </Badge>
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
             Everything your school{" "}
             <span className="bg-gradient-to-r from-primary to-chart-1 bg-clip-text text-transparent">
-              needs
+              runs on
             </span>
           </h2>
           <p className="mt-5 text-muted-foreground text-lg">
-            Purpose-built tools that work together seamlessly, replacing a
-            patchwork of spreadsheets and legacy software.
+            One system for academics, attendance, fees, communication, and more —
+            built to make daily operations effortless.
           </p>
         </div>
 

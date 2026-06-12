@@ -30,14 +30,14 @@ export function ModulesSection() {
             Modules
           </Badge>
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            One platform,{" "}
+            One system,{" "}
             <span className="bg-gradient-to-r from-primary to-chart-2 bg-clip-text text-transparent">
               every department
             </span>
           </h2>
           <p className="mt-5 text-muted-foreground text-lg">
-            From academics to hostel management, every module is connected so
-            data flows freely across your institution.
+            From attendance to hostel management — every module works together
+            so your school runs smoothly.
           </p>
         </div>
 

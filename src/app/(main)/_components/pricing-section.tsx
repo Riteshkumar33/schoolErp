@@ -8,22 +8,22 @@ import { CheckCircle2, ChevronRight, Sparkles } from "lucide-react"
 
 const plans = [
   {
-    name: "Starter",
-    price: "$29",
+    name: "Pro",
+    price: "₹999",
     period: "/month",
-    description: "For small schools up to 300 students",
-    features: ["Up to 300 students", "Academics & Attendance", "Fee Management", "Email Notifications", "Standard Support"],
-    cta: "Start Free Trial",
+    description: "For growing schools up to 500 students",
+    features: ["Up to 500 students", "All core modules", "SMS + Email alerts", "Parent portal", "Reports & analytics", "Priority support"],
+    cta: "Start 14-Day Trial",
     highlighted: false,
     gradient: "from-blue-500/10 to-transparent",
   },
   {
-    name: "Growth",
-    price: "$89",
+    name: "School+",
+    price: "₹2,499",
     period: "/month",
-    description: "For growing schools up to 1,500 students",
-    features: ["Up to 1,500 students", "All Starter features", "HR & Payroll", "Parent Portal", "SMS + Email alerts", "Priority Support"],
-    cta: "Start Free Trial",
+    description: "For established schools with unlimited growth",
+    features: ["Unlimited students", "Everything in Pro", "HR & Payroll", "Multi-branch support", "Custom branding", "Dedicated account manager"],
+    cta: "Start 14-Day Trial",
     highlighted: true,
     gradient: "from-primary/15 to-primary/5",
   },
@@ -31,8 +31,8 @@ const plans = [
     name: "Enterprise",
     price: "Custom",
     period: "",
-    description: "For large institutions and school chains",
-    features: ["Unlimited students", "All Growth features", "Multi-branch support", "Custom integrations", "Dedicated account manager", "SLA guarantee"],
+    description: "For school chains & large institutions",
+    features: ["Everything in School+", "Custom integrations", "On-premise option", "SLA guarantee", "Training & onboarding", "API access"],
     cta: "Contact Sales",
     highlighted: false,
     gradient: "from-violet-500/10 to-transparent",
@@ -51,11 +51,11 @@ export function PricingSection() {
             Simple,{" "}
             <span className="bg-gradient-to-r from-primary to-chart-1 bg-clip-text text-transparent">
               transparent
-            </span>{" "}
-            pricing
+            </span>
+            {" "}pricing
           </h2>
           <p className="mt-5 text-muted-foreground text-lg">
-            No hidden fees. Switch plans anytime.
+            No hidden fees. No long-term contracts. Upgrade, downgrade, or cancel anytime.
           </p>
         </div>
 

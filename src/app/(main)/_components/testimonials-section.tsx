@@ -5,7 +5,7 @@ import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "SchoolERP transformed how we manage 3,000 students. Fee collection alone saves us 40 hours a month.",
+    quote: "We switched from Excel sheets to SchoolERP in one afternoon. Fee collection alone saves us 40 hours a month now.",
     author: "Priya Mehta",
     role: "Principal",
     school: "Delhi Public School",
@@ -13,7 +13,7 @@ const testimonials = [
     gradient: "from-blue-500 to-blue-600",
   },
   {
-    quote: "The parent portal reduced our phone enquiries by 60%. Parents love the real-time updates.",
+    quote: "Parents love that they can check attendance and pay fees from their phone. Our office enquiry calls dropped by 60%.",
     author: "James Okafor",
     role: "Admin Head",
     school: "Greenfield Academy",
@@ -21,7 +21,7 @@ const testimonials = [
     gradient: "from-violet-500 to-violet-600",
   },
   {
-    quote: "Onboarding took two days. The support team was exceptional. I would highly recommend SchoolERP.",
+    quote: "Setting up took 10 minutes. No IT team, no training needed. Our teachers picked it up on day one. Best decision we made this year.",
     author: "Ananya Sharma",
     role: "Director",
     school: "Sunrise International",
@@ -42,9 +42,9 @@ export function TestimonialsSection() {
             Testimonials
           </Badge>
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            Trusted by{" "}
+            Loved by{" "}
             <span className="bg-gradient-to-r from-primary to-chart-2 bg-clip-text text-transparent">
-              school leaders
+              schools & educators
             </span>
           </h2>
         </div>

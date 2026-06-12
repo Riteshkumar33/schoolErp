@@ -33,9 +33,9 @@ const fontMono = JetBrains_Mono({
 
 
 export const metadata: Metadata = {
-  title: "SchoolERP — Modern School Management Platform",
+  title: "ABC School — School Management Portal",
   description:
-    "SchoolERP unifies academics, finance, HR, and communication on a single platform. Trusted by 500+ schools.",
+    "Access your school portal — attendance, fees, exams, timetables, and more. For students, parents, teachers, and administrators.",
 };
 
 export default function RootLayout({

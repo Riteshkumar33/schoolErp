@@ -2,13 +2,12 @@
 
 import Link from "next/link"
 import { Button } from "~/components/ui/button"
-import { ArrowRight, Zap, Globe, Lock, HeadphonesIcon } from "lucide-react"
+import { LogIn, Phone, Mail, MapPin } from "lucide-react"
 
-const trustBadges = [
-  { icon: Zap, label: "99.9% Uptime" },
-  { icon: Globe, label: "Multi-language" },
-  { icon: Lock, label: "SOC 2 Compliant" },
-  { icon: HeadphonesIcon, label: "24/7 Support" },
+const contactInfo = [
+  { icon: Phone, label: "+91 98765 43210" },
+  { icon: Mail, label: "info@abcschool.edu.in" },
+  { icon: MapPin, label: "123, Main Road, City" },
 ]
 
 export function CtaSection() {
@@ -31,42 +30,32 @@ export function CtaSection() {
 
           <div className="relative px-8 py-16 sm:px-16 sm:py-20 text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
-              Ready to modernise <br className="hidden sm:block" />
-              your school?
+              Ready to access <br className="hidden sm:block" />
+              your portal?
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-primary-foreground/75 text-lg">
-              Join 500+ institutions already running smarter with SchoolERP. Start
-              your free 14-day trial today.
+              Log in to manage attendance, check results, pay fees, and stay
+              updated with everything happening at school.
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button size="lg" variant="secondary" className="h-12 px-8 text-base shadow-lg" asChild>
-                <Link href="/register" className="inline-flex items-center justify-center gap-1.5">
-                  Get Started Free
-                  <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="h-12 px-8 text-base border-primary-foreground/30 bg-transparent text-primary-foreground shadow-none hover:bg-primary-foreground/10 hover:text-primary-foreground"
-                asChild
-              >
-                <Link href="#contact" className="inline-flex items-center justify-center">
-                  Talk to Sales
+                <Link href="/login" className="inline-flex items-center justify-center gap-1.5">
+                  <LogIn className="size-4" />
+                  Log In Now
                 </Link>
               </Button>
             </div>
 
             <div className="mt-12 flex flex-wrap justify-center gap-8">
-              {trustBadges.map((b) => {
-                const Icon = b.icon
+              {contactInfo.map((c) => {
+                const Icon = c.icon
                 return (
-                  <div key={b.label} className="flex items-center gap-2 text-sm text-primary-foreground/60">
+                  <div key={c.label} className="flex items-center gap-2 text-sm text-primary-foreground/60">
                     <div className="flex size-7 items-center justify-center rounded-full bg-primary-foreground/10">
                       <Icon className="size-3.5" />
                     </div>
-                    {b.label}
+                    {c.label}
                   </div>
                 )
               })}

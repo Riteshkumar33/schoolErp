@@ -4,9 +4,6 @@ import { HeroSection } from "./_components/hero-section";
 import { FeaturesSection } from "./_components/features-section";
 import { ModulesSection } from "./_components/modules-section";
 import { HowItWorksSection } from "./_components/how-it-works-section";
-import { TestimonialsSection } from "./_components/testimonials-section";
-import { PricingSection } from "./_components/pricing-section";
-import { FaqSection } from "./_components/faq-section";
 import { CtaSection } from "./_components/cta-section";
 import { Footer } from "./_components/footer";
 
@@ -20,9 +17,6 @@ export default function LandingPage() {
         <FeaturesSection />
         <ModulesSection />
         <HowItWorksSection />
-        <TestimonialsSection />
-        <PricingSection />
-        <FaqSection />
         <CtaSection />
       </main>
       <Footer />

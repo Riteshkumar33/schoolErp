@@ -4,14 +4,7 @@ import React from "react"
 import Link from "next/link"
 import { Button } from "~/components/ui/button"
 import { Badge } from "~/components/ui/badge"
-import { ArrowRight, Play, Sparkles } from "lucide-react"
-
-const stats = [
-  { value: "500+", label: "Schools Onboarded" },
-  { value: "2M+", label: "Students Managed" },
-  { value: "98%", label: "Uptime SLA" },
-  { value: "4.9★", label: "Average Rating" },
-]
+import { ArrowRight, LogIn, Sparkles } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -31,19 +24,18 @@ export function HeroSection() {
               className="mb-8 gap-2 rounded-full border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium backdrop-blur-sm"
             >
               <Sparkles className="size-3 text-primary" />
-              Now with AI-powered insights
+              School Management Portal
               <ArrowRight className="size-3 text-muted-foreground" />
             </Badge>
           </div>
 
           {/* Heading */}
           <h1 className="animate-in fade-in slide-in-from-bottom-6 duration-700 [animation-delay:150ms] text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-7xl">
-            The modern ERP{" "}
+            Welcome to{" "}
             <br className="hidden sm:block" />
-            built{" "}
             <span className="relative">
               <span className="bg-gradient-to-r from-primary via-chart-2 to-chart-1 bg-clip-text text-transparent">
-                for schools
+                ABC School
               </span>
               <svg
                 className="absolute -bottom-2 left-0 w-full"
@@ -64,51 +56,35 @@ export function HeroSection() {
 
           {/* Subtitle */}
           <p className="mx-auto mt-8 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-700 [animation-delay:300ms] text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            SchoolERP unifies academics, finance, HR, and communication on a
-            single platform — so your staff spends less time on admin and more
-            time on{" "}
-            <span className="font-medium text-foreground">education</span>.
+            Your complete school management system — attendance, fees, exams,
+            timetables, and more — all in{" "}
+            <span className="font-medium text-foreground">one place</span>.
           </p>
 
           {/* CTA Buttons */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 [animation-delay:450ms]">
             <Button size="lg" className="h-12 px-8 text-base shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-shadow" asChild>
-              <Link href="/register">
-                Start Free Trial <ArrowRight className="ml-1.5 size-4" />
+              <Link href="/login">
+                <LogIn className="mr-2 size-4" />
+                Log In to Portal
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="h-12 px-8 text-base group" asChild>
-              <Link href="#features">
-                <Play className="mr-2 size-4 transition-transform group-hover:scale-110" />
-                Watch Demo
+              <Link href="#modules">
+                Explore Modules
+                <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-0.5" />
               </Link>
             </Button>
           </div>
 
           {/* Trust line */}
           <p className="mt-5 animate-in fade-in duration-700 [animation-delay:600ms] text-xs text-muted-foreground">
-            14-day free trial · No credit card required · Cancel anytime
+            For students, parents, teachers, and administrators
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="mx-auto mt-24 grid max-w-4xl grid-cols-2 gap-8 sm:grid-cols-4 animate-in fade-in slide-in-from-bottom-12 duration-700 [animation-delay:700ms]">
-          {stats.map((s, i) => (
-            <div
-              key={s.label}
-              className="group relative text-center"
-            >
-              <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-b from-primary/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-              <p className="text-3xl font-extrabold tracking-tight bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent sm:text-4xl">
-                {s.value}
-              </p>
-              <p className="mt-1.5 text-sm text-muted-foreground">{s.label}</p>
-            </div>
-          ))}
-        </div>
-
         {/* Dashboard preview mockup */}
-        <div className="mx-auto mt-20 max-w-5xl animate-in fade-in slide-in-from-bottom-16 duration-1000 [animation-delay:900ms]">
+        <div className="mx-auto mt-20 max-w-5xl animate-in fade-in slide-in-from-bottom-16 duration-1000 [animation-delay:700ms]">
           <div className="relative rounded-2xl border border-border/60 bg-card/50 p-2 shadow-2xl shadow-primary/5 backdrop-blur-sm">
             {/* Window chrome */}
             <div className="flex items-center gap-1.5 px-3 py-2.5 border-b border-border/40">

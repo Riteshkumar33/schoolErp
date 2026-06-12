@@ -1,28 +1,28 @@
 "use client"
 
 import { Badge } from "~/components/ui/badge"
-import { UserPlus, Upload, Rocket } from "lucide-react"
+import { UserPlus, School, Rocket } from "lucide-react"
 
 const steps = [
   {
     step: "01",
     icon: UserPlus,
-    title: "Sign Up & Configure",
-    desc: "Create your school account and configure your academic structure in minutes.",
+    title: "Get Your Login",
+    desc: "Your school admin will provide your login credentials based on your role — teacher, parent, or staff.",
     color: "from-blue-500 to-blue-600",
   },
   {
     step: "02",
-    icon: Upload,
-    title: "Import Your Data",
-    desc: "Bulk import students, staff, and historical records via CSV or our migration tool.",
+    icon: School,
+    title: "Access Your Dashboard",
+    desc: "Log in to see your personalised dashboard — attendance, timetable, fees, results, and more.",
     color: "from-violet-500 to-violet-600",
   },
   {
     step: "03",
     icon: Rocket,
-    title: "Go Live",
-    desc: "Invite your team, set permissions, and start running your school smarter.",
+    title: "Stay Connected",
+    desc: "Get real-time notifications about school events, fee reminders, and your child's progress.",
     color: "from-emerald-500 to-emerald-600",
   },
 ]
@@ -33,12 +33,12 @@ export function HowItWorksSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <Badge variant="secondary" className="mb-5 bg-primary/10 text-primary border-primary/20">
-            How It Works
+            Getting Started
           </Badge>
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            Up and running in{" "}
+            Simple to{" "}
             <span className="bg-gradient-to-r from-primary to-chart-1 bg-clip-text text-transparent">
-              3 steps
+              get started
             </span>
           </h2>
         </div>

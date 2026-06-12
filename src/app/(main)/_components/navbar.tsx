@@ -4,14 +4,13 @@ import React from "react"
 import Link from "next/link"
 import { Button } from "~/components/ui/button"
 import { ThemeToggleButton } from "~/components/theme-toggle-button"
-import { GraduationCap, ArrowRight, Menu, X } from "lucide-react"
+import { GraduationCap, LogIn, Menu, X } from "lucide-react"
 import { cn } from "~/lib/utils"
 
 const navLinks = [
   { label: "Features", href: "#features" },
   { label: "Modules", href: "#modules" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#contact" },
 ]
 
 export function Navbar() {
@@ -39,12 +38,9 @@ export function Navbar() {
             <div className="flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/70 shadow-md shadow-primary/20 transition-transform group-hover:scale-105">
               <GraduationCap className="size-5 text-primary-foreground" />
             </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-bold tracking-tight leading-tight">
-                School<span className="text-primary">ERP</span>
-              </span>
-              <span className="text-[8px] text-muted-foreground leading-none tracking-wide">powered by Prodomation Technologies</span>
-            </div>
+            <span className="text-lg font-bold tracking-tight leading-tight">
+              ABC <span className="text-primary">School</span>
+            </span>
           </Link>
 
           <nav className="hidden items-center gap-1 md:flex">
@@ -61,12 +57,10 @@ export function Navbar() {
 
           <div className="flex items-center gap-2 sm:gap-3">
             <ThemeToggleButton />
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex" asChild>
-              <Link href="/login">Log in</Link>
-            </Button>
             <Button size="sm" className="hidden sm:inline-flex shadow-md shadow-primary/20" asChild>
-              <Link href="/register">
-                Get Started <ArrowRight className="ml-1 size-3.5" />
+              <Link href="/login">
+                <LogIn className="mr-1.5 size-3.5" />
+                Log In
               </Link>
             </Button>
             <Button
@@ -96,12 +90,10 @@ export function Navbar() {
               </Link>
             ))}
             <hr className="my-2" />
-            <Button variant="outline" className="w-full" asChild>
-              <Link href="/login" onClick={() => setMobileOpen(false)}>Log in</Link>
-            </Button>
-            <Button className="w-full mt-2" asChild>
-              <Link href="/register" onClick={() => setMobileOpen(false)}>
-                Get Started <ArrowRight className="ml-1 size-3.5" />
+            <Button className="w-full" asChild>
+              <Link href="/login" onClick={() => setMobileOpen(false)}>
+                <LogIn className="mr-1.5 size-3.5" />
+                Log In
               </Link>
             </Button>
           </nav>
