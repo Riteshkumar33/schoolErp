@@ -38,9 +38,14 @@ export function Navbar() {
             <div className="flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/70 shadow-md shadow-primary/20 transition-transform group-hover:scale-105">
               <GraduationCap className="size-5 text-primary-foreground" />
             </div>
-            <span className="text-lg font-bold tracking-tight leading-tight">
-              Baby Martin <span className="text-primary">International</span>
-            </span>
+            <div className="flex flex-col">
+              <span className="text-base font-bold tracking-tight leading-none">
+                Baby Martin <span className="text-primary">International</span>
+              </span>
+              <span className="text-[9px] text-muted-foreground font-medium mt-1">
+                Powered by Prodomation Technologies
+              </span>
+            </div>
           </Link>
 
           <nav className="hidden items-center gap-1 md:flex">
